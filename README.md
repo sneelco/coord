@@ -225,6 +225,7 @@ Example Structures
     "application": "my-application",
     "endpoints": [
       {
+        "name": "dc1-prod"
         "segment": "dc1",
         "lifecycle": "Production",
         "data": "http://dc1.my-application.com"
@@ -233,6 +234,10 @@ Example Structures
   }
 ]
 ```
+* /api/v1/services/app-server [GET, PUT, DELETE]
+* /api/v1/services/app-server/endpoints [GET, POST]
+* /api/v1/services/app-server/endpoints/dc1-prod [GET, PUT, DELETE]
+
 #### Changesets
 * /api/v1/changesets [GET, POST]
 
