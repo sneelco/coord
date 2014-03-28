@@ -215,6 +215,24 @@ Example Structures
 * /api/v1/applications/my-application/contentviews [GET, POST]
 * /api/v1/applications/my-application/changesets [GET, POST]
 
+#### Services
+* /api/v1/services [GET, POST]
+
+```javascript
+[
+  {
+    "name": "app-service",
+    "application": "my-application",
+    "endpoints": [
+      {
+        "segment": "dc1",
+        "lifecycle": "Production",
+        "data": "http://dc1.my-application.com"
+      }
+    ]
+  }
+]
+```
 #### Changesets
 * /api/v1/changesets [GET, POST]
 
